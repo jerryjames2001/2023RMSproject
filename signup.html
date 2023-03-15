@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+    .login-page {
+      width: 360px;
+      padding: 8% 0 0;
+      margin: auto;
+    }
+    .login-page .form .login{
+      margin-top: -31px;
+      margin-bottom: 26px;
+    }
+    .form .buttons{
+    font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(135deg, #71b7e6, #9b59b6);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .buttons:hover{
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+.form {
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+  }
+  .form i{
+    margin-left: -30px;
+    cursor: pointer;
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .form .message a:hover{
+  color: indianred;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    background-image: url("signinpic.jpg");
+  }
+  h2{
+    color:white;
+  }
+  h4{
+    color: white;
+  }
+  a{
+    color: white;
+  }
+  input:hover{background-color: #71b7e6;}
+</style>
+    </head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <div class="login">
+            <div class="login-header">
+              <h2>SIGN UP</h2>
+              <h4>Enter the Details</h4>
+            </div>
+          </div>
+        <form method="post" action="register.php" enctype="multipart/form-data">
+            <input type="email" name="email" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="firstname" placeholder="First name" required>
+            <input type="text" name="lastname" placeholder="Last name" required>
+            <input type="text" name="home" placeholder="Home address" required>
+            <input type="text" name="street" placeholder="street name" required>
+            <input type="text" name="city" placeholder="city name" required>
+            <input type="number" name="pincode" placeholder="pincode" required>
+            <input type="number" name="phone" placeholder="phone" required>
+            <input type="file" name="image" placeholder="Add your Image" required>
+            <input type="submit" name="submit" value="sign up" class="buttons">
+   <h3><a href="signin.html">Already have an account?</a></h3>
+        </form><br><br><a href="index.html"><button class="buttons">Home</button></a>
+        </div></div>
+</body>
+</html>

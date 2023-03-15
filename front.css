@@ -1,0 +1,11 @@
+.colorrs{animation:colorfull1 12s infinite;
+    display:flexbox;
+}
+@keyframes colorfull1{
+    0%{background-color:  aqua;}
+    20%{background-color:aquamarine;}
+    40%{background-color:rgba(165, 222, 75, 0.433);}
+    60%{background-color:rgba(179, 255, 0, 0.667);}
+    80%{background-color:rgb(237, 192, 28);}
+    100%{background-color:rgba(249, 20, 20, 0.9);}
+}
